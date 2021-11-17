@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton{
+    background-color: v.$azul;
+    color: v.$blanco;
+    padding: 1.5rem;
+    margin: 5rem 0rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    display: block;
+    width: 100%;
+    @include m.tablet {
+        width: auto;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.boton-eliminar{
+    background-color: v.$rojo;
+    color: v.$blanco;
+    padding: 1.5rem;
+    margin: 5rem 0rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    display: block;
+    width: 100%;
+    @include m.tablet {
+        width: auto;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
